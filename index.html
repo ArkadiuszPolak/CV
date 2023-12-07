@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#reviews">Reviews</a>
@@ -43,25 +43,156 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
               
-
             </ul>
           </div>
         </div>
     </nav>
+
     <!-- MAIN CONTENT -->
     <div id="content-wrapper">
 
         <!-- HOME -->
         <section id="home" class="full-height px-lg-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold">I'M an <span class="text-brand">IT Application Support Specialist and Frontend Developer</span></h1>
-                    <p class="lead mt-2 mb-4">My name is Arkadiusz Polak, and I am currently learning web development.</p>
-                    <a href="#" class="btn btn-brand me-3">More About Me</a>
-                    <a href="#" class="link-custom">Phone: (+48) 531 031 231</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M an <span class="text-brand">IT Application Support Specialist and Frontend Developer</span></h1>
+                        <p class="lead mt-2 mb-4 " data-aos="fade-up" data-aos-delay="300">My name is Arkadiusz Polak, and I am currently learning web development.</p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#" class="btn btn-brand me-3">More About Me</a>
+                            <a href="#" class="link-custom">Phone: (+48) 531 031 231</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+
+                    <div class="row gy-4">
+
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-toolbox"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">Application Implementation</h5>
+                                <p>Support in the process of application implementation at external customers.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-screwdriver"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">User Support</h5>
+                                <p>Wide-ranging user support, technical support related to applications, hosting, hardware, websites.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-laptop-code"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">Frontend Development</h5>
+                                <p>Web development and design of simple websites and web applications.</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY WORK -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Work Experience</h1>
+                    </div>
+
+                    <div class="row gy-4">
+
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/coding.jpg" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Lionbridge</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/test.jpg" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Lionbridge</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/coding.jpg" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Lionbridge</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/coding.jpg" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Lionbridge</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="link-custom">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT ME</h6>
+                        <h1>My Education and Hobbys</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </div>
 
