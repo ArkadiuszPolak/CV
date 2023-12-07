@@ -14,5 +14,50 @@
 body{
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: var(--font-base);
+    font-family: var(--font-base), Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s  ease;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+/* NAVIGATION */
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand);
+}
+
+.navbar-brand img{
+    border: 6px solid var(--color-brand);
+}
+
+@media(min-width: 992px){
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(57, 62, 70, 0.85), rgba(57, 62, 70, 0.85)), url(../images/navigation-image.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 }
