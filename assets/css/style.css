@@ -113,6 +113,18 @@ img{
     }
 }
 
+@media(max-width: 992px){
+    #home .link-custom{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 576px){
+    #home .link-custom{
+        font-size: 8px;
+    }
+}
+
 /* BTN */
 
 .btn{
